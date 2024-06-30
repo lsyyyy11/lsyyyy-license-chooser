@@ -5,6 +5,31 @@ body {
     padding: 20px;
 }
 
+.language-selector {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.language-selector a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.language-selector a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
 .container {
     max-width: 600px;
     margin: auto;
@@ -63,4 +88,21 @@ button:hover {
     width: 150px;
     height: 150px;
     object-fit: contain;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

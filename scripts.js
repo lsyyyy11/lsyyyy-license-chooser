@@ -32,8 +32,8 @@ function chooseLicense() {
         licenseImage = 'https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png';
     }
 
-    document.getElementById('result').innerHTML = `
-        Your recommended license is: <a href="${licenseUrl}" target="_blank">${license}</a>
-        <div><img src="${licenseImage}" alt="${license}" class="license-image"></div>
-    `;
+    document.getElementById('license-link').innerText = license;
+    document.getElementById('license-link').href = licenseUrl;
+    document.getElementById('license-image').src = licenseImage;
+    document.getElementById('license-image').alt = license;
 }

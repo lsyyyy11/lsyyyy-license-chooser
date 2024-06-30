@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>选择许可证</title>
+    <title>License Chooser</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,35 +11,35 @@
         <a href="index.html">中文</a> | <a href="index_en.html">English</a> | <a href="index_fr.html">Français</a>
     </div>
     <div class="logo-container">
-        <img src="https://lsyyyy-imagebed.pages.dev/file/6b3c710557a1b5fd9d2d3.png" alt="许可证选择器 Logo" class="logo">
-        <h1>选择您的许可证</h1>
+        <img src="https://lsyyyy-imagebed.pages.dev/file/6b3c710557a1b5fd9d2d3.png" alt="License Chooser Logo" class="logo">
+        <h1>Choose Your License</h1>
     </div>
     <div class="container">
         <form id="license-form">
             <div class="form-group">
-                <label for="modification">允许修改您的作品吗？</label>
+                <label for="modification">Allow modifications of your work?</label>
                 <select id="modification" name="modification">
-                    <option value="yes">是</option>
-                    <option value="no">否</option>
-                    <option value="share-alike">是，但其他人也必须共享相同方式</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="share-alike">Yes, as long as others share alike</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="commercial">允许商业用途吗？</label>
+                <label for="commercial">Allow commercial uses of your work?</label>
                 <select id="commercial" name="commercial">
-                    <option value="yes">是</option>
-                    <option value="no">否</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select>
             </div>
-            <button type="button" onclick="chooseLicense()">选择许可证</button>
+            <button type="button" onclick="chooseLicense()">Choose License</button>
         </form>
         <div id="result" class="result">
-            <span id="result-text">您的推荐许可证是: </span><a id="license-link" href="#" target="_blank"></a>
+            <span id="result-text">Your recommended license is: </span><a id="license-link" href="#" target="_blank"></a>
             <div><img id="license-image" src="" alt="" class="license-image"></div>
         </div>
     </div>
     <footer>
-        <p>在 <a href="https://github.com/lsyyyy11" target="_blank">GitHub</a> 找到我</p>
+        <p>Find me on <a href="https://github.com/lsyyyy11" target="_blank">GitHub</a></p>
     </footer>
     <script src="scripts.js"></script>
 </body>

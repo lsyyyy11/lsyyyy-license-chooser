@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisissez Votre Licence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="language-selector">
+        <a href="index.html">中文</a> | <a href="index_en.html">English</a> | <a href="index_fr.html">Français</a>
+    </div>
+    <div class="logo-container">
+        <img src="https://lsyyyy-imagebed.pages.dev/file/6b3c710557a1b5fd9d2d3.png" alt="Choisissez Votre Licence Logo" class="logo">
+        <h1>Choisissez Votre Licence</h1>
+    </div>
+    <div class="container">
+        <form id="license-form">
+            <div class="form-group">
+                <label for="modification">Permettre des modifications de votre travail ?</label>
+                <select id="modification" name="modification">
+                    <option value="yes">Oui</option>
+                    <option value="no">Non</option>
+                    <option value="share-alike">Oui, tant que les autres partagent de la même manière</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="commercial">Permettre des utilisations commerciales de votre travail ?</label>
+                <select id="commercial" name="commercial">
+                    <option value="yes">Oui</option>
+                    <option value="no">Non</option>
+                </select>
+            </div>
+            <button type="button" onclick="chooseLicense()">Choisir Licence</button>
+        </form>
+        <div id="result" class="result">
+            <span id="result-text">Votre licence recommandée est : </span><a id="license-link" href="#" target="_blank"></a>
+            <div><img id="license-image" src="" alt="" class="license-image"></div>
+        </div>
+    </div>
+    <footer>
+        <p>Trouvez-moi sur <a href="https://github.com/lsyyyy11" target="_blank">GitHub</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
