@@ -3,35 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choisissez Votre Licence</title>
+    <title>Choisissez votre Licence</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="language-selector">
-        <a href="index.html">中文</a> | <a href="index_en.html">English</a> | <a href="index_fr.html">Français</a>
-    </div>
-    <div class="logo-container">
-        <img src="https://lsyyyy-imagebed.pages.dev/file/6b3c710557a1b5fd9d2d3.png" alt="Choisissez Votre Licence Logo" class="logo">
-        <h1>Choisissez Votre Licence</h1>
-    </div>
+    <header>
+        <div class="language-selector">
+            <a href="index.html" class="language-link">中文</a>
+            <a href="index_en.html" class="language-link">English</a>
+            <a href="index_fr.html" class="language-link">Français</a>
+        </div>
+        <div class="logo-container">
+            <img src="https://lsyyyy-imagebed.pages.dev/file/6b3c710557a1b5fd9d2d3.png" alt="Logo du Choix de Licence" class="logo">
+            <h1>Choisissez Votre Licence</h1>
+        </div>
+    </header>
     <div class="container">
         <form id="license-form">
             <div class="form-group">
-                <label for="modification">Permettre des modifications de votre travail ?</label>
+                <label for="modification">Permettre des modifications de votre œuvre ?</label>
                 <select id="modification" name="modification">
                     <option value="yes">Oui</option>
                     <option value="no">Non</option>
-                    <option value="share-alike">Oui, tant que les autres partagent de la même manière</option>
+                    <option value="share-alike">Oui, mais les autres doivent partager de la même manière</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="commercial">Permettre des utilisations commerciales de votre travail ?</label>
+                <label for="commercial">Autoriser l'utilisation commerciale ?</label>
                 <select id="commercial" name="commercial">
                     <option value="yes">Oui</option>
                     <option value="no">Non</option>
                 </select>
             </div>
-            <button type="button" onclick="chooseLicense()">Choisir Licence</button>
+            <button type="button" onclick="chooseLicense()">Choisir la Licence</button>
         </form>
         <div id="result" class="result">
             <span id="result-text">Votre licence recommandée est : </span><a id="license-link" href="#" target="_blank"></a>
@@ -39,7 +43,7 @@
         </div>
     </div>
     <footer>
-        <p>Trouvez-moi sur <a href="https://github.com/lsyyyy11" target="_blank">GitHub</a></p>
+        <p>Trouvez-moi sur <a href="https://github.com/lsyyyy11" target="_blank"><img src="https://lsyyyy-imagebed.pages.dev/file/4949b2252c08cea091e69.png" alt="GitHub Logo" class="github-logo"></a></p>
     </footer>
     <script src="scripts.js"></script>
 </body>

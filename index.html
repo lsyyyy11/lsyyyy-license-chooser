@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="language-selector">
-        <a href="index.html">中文</a> | <a href="index_en.html">English</a> | <a href="index_fr.html">Français</a>
-    </div>
-    <div class="logo-container">
-        <img src="https://lsyyyy-imagebed.pages.dev/file/6b3c710557a1b5fd9d2d3.png" alt="许可证选择器 Logo" class="logo">
-        <h1>选择您的许可证</h1>
-    </div>
+    <header>
+        <div class="language-selector">
+            <a href="index.html" class="language-link">中文</a>
+            <a href="index_en.html" class="language-link">English</a>
+            <a href="index_fr.html" class="language-link">Français</a>
+        </div>
+        <div class="logo-container">
+            <img src="https://lsyyyy-imagebed.pages.dev/file/6b3c710557a1b5fd9d2d3.png" alt="许可证选择器 Logo" class="logo">
+            <h1>选择您的许可证</h1>
+        </div>
+    </header>
     <div class="container">
         <form id="license-form">
             <div class="form-group">
@@ -34,12 +38,12 @@
             <button type="button" onclick="chooseLicense()">选择许可证</button>
         </form>
         <div id="result" class="result">
-            <span id="result-text">您的推荐许可证是: </span><a id="license-link" href="#" target="_blank"></a>
+            <span id="result-text">推荐使用许可证: </span><a id="license-link" href="#" target="_blank"></a>
             <div><img id="license-image" src="" alt="" class="license-image"></div>
         </div>
     </div>
     <footer>
-        <p>在 <a href="https://github.com/lsyyyy11" target="_blank">GitHub</a> 找到我</p>
+        <p>在 <a href="https://github.com/lsyyyy11" target="_blank"><img src="https://lsyyyy-imagebed.pages.dev/file/4949b2252c08cea091e69.png" alt="GitHub Logo" class="github-logo"></a> 找到我</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
