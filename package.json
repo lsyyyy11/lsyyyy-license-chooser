@@ -1,0 +1,25 @@
+{
+    "name": "lsyyyy-license-chooser",
+    "version": "1.0.0",
+    "description": "LICENSE Chooser",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lsyyyy11/lsyyyy-license-chooser.git"
+    },
+    "keywords": [
+      "vue",
+      "wiki",
+      "lsyyyy",
+      "lsyyyy11"
+    ],
+    "author": "lsyyyy11",
+    "license": "AGPL-3.0",
+    "bugs": {
+      "url": "https://github.com/lsyyyy11/lsyyyy-license-chooser/issues"
+    },
+    "homepage": "https://github.com/lsyyyy11/lsyyyy-license-chooser#readme"
+  }

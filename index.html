@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>许可证选择器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>选择你想要的许可证</h1>
+        <form id="license-form">
+            <div class="form-group">
+                <label for="modification">可以修改作品吗？</label>
+                <select id="modification" name="modification">
+                    <option value="yes">可以。</option>
+                    <option value="no">不行。</option>
+                    <option value="share-alike">可以，但必须遵守同样的协议。</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="commercial">允许他人将您的作品用于商业用途吗？</label>
+                <select id="commercial" name="commercial">
+                    <option value="yes">允许。</option>
+                    <option value="no">不行。</option>
+                </select>
+            </div>
+            <button type="button" onclick="chooseLicense()">查看我想要的许可证</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
